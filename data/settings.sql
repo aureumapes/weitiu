@@ -1,0 +1,1 @@
+SELECT id, password FROM Settings

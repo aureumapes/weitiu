@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.ENTRY_NAME}}</title>
+    <link rel="stylesheet" href="/tailwind">
+</head>
+<body class="bg-slate-600 text-center">
+<h1>{{.ENTRY_NAME}}</h1>
+<div class="fixed h-screen w-40 left-0 top-0 bg-slate-700 rounded-r-xl text-left">
+    <div class="ml-7 mt-10">
+        <a href="/">
+            <button class="rounded-xl pl-5 pr-5 bg-slate-600 hover:bg-slate-400">Home</button>
+        </a>
+    </div>
+</div>
+<span style="white-space: pre-line">{{.CONTENT}}</span>
+</body>
+</html>

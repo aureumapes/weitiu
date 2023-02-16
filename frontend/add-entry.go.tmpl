@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create an Entry</title>
+    <link rel="stylesheet" href="/tailwind">
+</head>
+<body class="bg-slate-600 text-center">
+<h1>Upload an Entry</h1>
+<form
+        class="pt-28"
+        method="POST"
+        action="/add-entry"
+>
+    <label>
+        <input class="rounded-xl pl-5 bg-slate-500" type="text" placeholder="Name" name="name">
+    </label><br>
+    <label>
+        <textarea name="content" rows="20" cols="50" class="mt-5 rounded-xl pl-5 resize-none bg-slate-500 cursor-text"
+                  placeholder="Content of the page" type="text"></textarea>
+    </label>
+    <br>
+    <label>
+        <input class="rounded-xl pl-5 bg-slate-500" type="password" placeholder="Admin Password" name="admin">
+    </label>
+    <label>
+        <input value="Upload Entry" class="mt-5 bg-slate-500 rounded-xl pl-5 pr-5 hover:bg-slate-400 cursor-pointer"
+               type="submit">
+    </label>
+</form>
+</body>
+</html>

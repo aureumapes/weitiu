@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weitiu</title>
+    <link rel="stylesheet" href="/tailwind">
+</head>
+<body class="bg-slate-600 text-center">
+<h1>Weitiu</h1>
+<h2>Entries</h2>
+<div class="mt-5">
+    {{range .ENTRIES}}
+        <a href="/entry?name={{.Name}}">{{.Name}}</a><br>
+    {{end}}
+</div>
+<h2 class="mt-5">For Admins</h2>
+<a href="/add-entry">Add an Entry</a>
+</body>
+</html>
