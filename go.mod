@@ -3,13 +3,13 @@ module github.com/Amiraxoba2/weitiu
 go 1.20
 
 require (
+	github.com/gin-gonic/gin v1.8.2
 	gorm.io/driver/sqlite v1.4.4
 	gorm.io/gorm v1.24.0
 )
 
 require (
 	github.com/gin-contrib/sse v0.1.0 // indirect
-	github.com/gin-gonic/gin v1.8.2 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
 	github.com/go-playground/universal-translator v0.18.0 // indirect
 	github.com/go-playground/validator/v10 v10.11.1 // indirect
