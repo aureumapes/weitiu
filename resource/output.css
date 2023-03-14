@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.6 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -83,6 +83,20 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 /*
@@ -319,6 +333,7 @@ legend {
 ol,
 ul,
 menu {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -442,10 +457,6 @@ video {
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-}
-
-* {
-  color: white;
 }
 
 .fixed {

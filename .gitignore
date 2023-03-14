@@ -1,2 +1,4 @@
 .idea
 go.sum
+resource/output.css
+resource/node_modules
