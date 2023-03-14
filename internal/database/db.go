@@ -5,4 +5,4 @@ import (
 	"gorm.io/gorm"
 )
 
-var Db, _ = gorm.Open(sqlite.Open("data/weitiu.db"), &gorm.Config{})
+var Db, _ = gorm.Open(sqlite.Open("resource/weitiu.db"), &gorm.Config{})

@@ -8,11 +8,11 @@ import (
 
 func StartServer() {
 	r := gin.Default()
-	r.LoadHTMLGlob("frontend/*.go.tmpl")
+	r.LoadHTMLGlob("resource/*.go.tmpl")
 	r.GET("/", route.Index)
 	r.GET("/entry", route.Entry)
 	r.GET("/add-entry", func(ctx *gin.Context) { ctx.HTML(http.StatusOK, "add-entry.go.tmpl", nil) })
 	r.POST("/add-entry", route.AddEntry)
-	r.GET("/tailwind", func(ctx *gin.Context) { ctx.File("./frontend/output.css") })
+	r.GET("/tailwind", func(ctx *gin.Context) { ctx.File("./resource/output.css") })
 	r.Run(":8080")
 }
