@@ -14,7 +14,7 @@ func main() {
 	println("What do you want to do?")
 	input, _ := bufio.NewReader(os.Stdin).ReadString('\n')
 	switch strings.Split(input, "\n")[0] {
-	case "cp":
+	case "passwd":
 		var settings database.AdminSettings
 		database.Db.Last(&settings)
 		println("Current Password: " + settings.Password)
@@ -23,7 +23,7 @@ func main() {
 		newPwd := strings.Split(newPwdRead, "\n")[0]
 		database.Db.Create(&database.AdminSettings{Password: newPwd})
 		break
-	case "s":
+	case "start":
 		server.StartServer()
 		break
 	}

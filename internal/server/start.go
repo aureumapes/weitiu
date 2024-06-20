@@ -8,7 +8,7 @@ import (
 
 func StartServer() {
 	r := gin.Default()
-	r.LoadHTMLGlob("resource/*.go.tmpl")
+	r.LoadHTMLGlob("~/.waitiu/resource/*.go.tmpl")
 	r.GET("/", route.Index)
 	r.GET("/entry", route.Entry)
 	r.GET("/add-entry", func(ctx *gin.Context) { ctx.HTML(http.StatusOK, "add-entry.go.tmpl", nil) })
