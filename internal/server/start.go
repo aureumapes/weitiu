@@ -4,11 +4,14 @@ import (
 	"github.com/Amiraxoba2/weitiu/internal/server/route"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"os"
 )
+
+var home, _ = os.UserHomeDir()
 
 func StartServer() {
 	r := gin.Default()
-	r.LoadHTMLGlob("~/.waitiu/resource/*.go.tmpl")
+	r.LoadHTMLGlob(home + "/.weitiu/resource/*.go.tmpl")
 	r.GET("/", route.Index)
 	r.GET("/entry", route.Entry)
 	r.GET("/add-entry", func(ctx *gin.Context) { ctx.HTML(http.StatusOK, "add-entry.go.tmpl", nil) })
