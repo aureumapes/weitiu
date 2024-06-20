@@ -6,4 +6,3 @@ install:
 	sudo cp ./weitiu /usr/bin
 	sudo chmod +xrw /usr/bin/weitiu
 	weitiu
-	echo "passwd"
